@@ -606,6 +606,15 @@ input, select, textarea {
 		position: relative;
 	}
 
+	[class^="fas"], [class*=" fas"] {
+		display: inline-block;
+		width: 100%;
+	}
+
+		td {
+			text-align:center;
+		}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -702,17 +711,21 @@ input, select, textarea {
 		.image.mechin {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
+			width: 60%;
 		}
 
 		.image.mechin iframe{
 			width: 100%;
-
+			
+		}
+		.image.mechin :hover{
+			opacity:50%
 			
 		}
 
 			.image.main img {
 				width: 100%;
+				height: 100%;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1489,6 +1502,8 @@ input, select, textarea {
 					min-width: 10rem;
 					max-width: 100%;
 				}
+
+				
 
 					#header nav ul li {
 						border-left: 0;
