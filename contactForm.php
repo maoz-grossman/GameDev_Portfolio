@@ -12,3 +12,5 @@ if(isset($_POST['submit']))
     mail($myMail , $txt , $headers );
     header("Location: index.html?mailsend");
 }
+
+?>
